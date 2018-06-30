@@ -1,3 +1,7 @@
+function prompt_hostname
+    string replace -r "\..*" "" $__fish_prompt_hostname
+end
+
 function fish_prompt --description "Write out the prompt"
     set -l color_cwd
     set -l suffix
@@ -5,7 +9,7 @@ function fish_prompt --description "Write out the prompt"
     if not set -q __git_cb
         set __git_cb " ["(set_color brown)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"""]"
     end
-
+    
     switch "$USER"
         case root toor
             if set -q fish_color_cwd_root
