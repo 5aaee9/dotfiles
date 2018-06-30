@@ -1,4 +1,7 @@
 function prompt_hostname
+    if [ "$__fish_prompt_hostname" = "" ]
+        set __fish_prompt_hostname (eval hostname)
+    end
     string replace -r "\..*" "" $__fish_prompt_hostname
 end
 
