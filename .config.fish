@@ -28,9 +28,6 @@ function fish_prompt --description "Write out the prompt"
 
     echo -n -s "[$USER" @ (prompt_hostname) '] (' (set_color $color_cwd) (prompt_pwd) (set_color normal) $__git_cb ") $suffix "
 end
-<<<<<<< HEAD
-source ~/.config/fish/nvm-wrapper/nvm.fish
-=======
 
 function fish_right_prompt
     if test $CMD_DURATION
@@ -38,4 +35,5 @@ function fish_right_prompt
     end
     echo $duration (date "+%Y-%m-%d %H:%M:%S")
 end
->>>>>>> 33caba29d89fd595b9ea4a9b920299c16ec84554
+
+source ~/.config/fish/nvm-wrapper/nvm.fish
