@@ -21,3 +21,4 @@ function fish_prompt --description "Write out the prompt"
 
     echo -n -s "[$USER" @ (prompt_hostname) '] (' (set_color $color_cwd) (prompt_pwd) (set_color normal) $__git_cb ") $suffix "
 end
+source ~/.config/fish/nvm-wrapper/nvm.fish
