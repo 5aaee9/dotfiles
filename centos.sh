@@ -1,3 +1,5 @@
-yum install git fish -y
+#!/usr/bin/bash
+set -e 
+yum install -y git fish
 
-fish index.fish
+bash index.sh

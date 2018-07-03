@@ -6,6 +6,12 @@ function prompt_hostname
 end
 
 function fish_prompt --description "Write out the prompt"
+    if test $status -eq 0
+        set lastStatus (set_color yellow)"√"(set_color normal)
+    else 
+        set lastStatus (set_color red)"×"(set_color normal)
+    end
+
     set -l color_cwd
     set -l suffix
     
@@ -26,7 +32,7 @@ function fish_prompt --description "Write out the prompt"
             set suffix '>'
     end
 
-    echo -n -s "[$USER" @ (prompt_hostname) '] (' (set_color $color_cwd) (prompt_pwd) (set_color normal) $__git_cb ") $suffix "
+    echo -n -s "[$USER" @ (prompt_hostname) '] (' (set_color $color_cwd) (prompt_pwd) (set_color normal) $__git_cb " ["$lastStatus"]) $suffix "
 end
 
 function fish_right_prompt
