@@ -40,7 +40,7 @@
         "max-len": [
             2,
             {
-                "code": 80
+                "code": 120
             }
         ],
         "no-func-assign": "error",
@@ -98,7 +98,6 @@
         }],
         "linebreak-style": ["error", "unix"],
         "no-array-constructor": "error",
-        "no-continue": "error",
         "no-new-object": "error",
         "no-mixed-spaces-and-tabs": "error",
         "no-multi-assign": "error",
