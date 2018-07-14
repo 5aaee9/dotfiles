@@ -1,12 +1,19 @@
 #!/usr/bin/bash
 set -e
 
-git clone https://github.com/creationix/nvm.git ~/.nvm
-mkdir -p ~/.config/fish
-cp .config.fish ~/.config/fish/config.fish
+if [ -d "~/.nvm" ]
+    git clone https://github.com/creationix/nvm.git ~/.nvm
+fi
 
-pushd ~/.config/fish
-git clone git://github.com/passcod/nvm-fish-wrapper.git nvm-wrapper
-popd
+if [ ! -f "~/.config/fish/config.fish" ]
+    mkdir -p ~/.config/fish
+    cp .config.fish ~/.config/fish/config.fish
+fi
 
-fish -c "nvm install 10"
+if [ -d "~/.config/fish/nvm-wrapper" ]
+    pushd ~/.config/fish
+    git clone git://github.com/passcod/nvm-fish-wrapper.git nvm-wrapper
+    popd
+fi
+
+fish index.fish
