@@ -2,7 +2,7 @@
 set -e
 pacman -S git fish
 
-if [ -f "index.sh" ];
+if [ -f "index.sh" ]; then
     # run local
     bash index.sh
 else
