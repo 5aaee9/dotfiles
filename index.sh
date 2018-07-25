@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 set -e
 
-if [ -d "~/.nvm" ]; then
+if [ ! -d "~/.nvm" ]; then
     git clone https://github.com/creationix/nvm.git ~/.nvm
 fi
 
@@ -10,7 +10,7 @@ if [ ! -f "~/.config/fish/config.fish" ]; then
     cp .config.fish ~/.config/fish/config.fish
 fi
 
-if [ -d "~/.config/fish/nvm-wrapper" ]; then
+if [ ! -d "~/.config/fish/nvm-wrapper" ]; then
     pushd ~/.config/fish
     git clone git://github.com/passcod/nvm-fish-wrapper.git nvm-wrapper
     popd
