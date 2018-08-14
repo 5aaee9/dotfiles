@@ -162,6 +162,9 @@
         "rest-spread-spacing": "error",
         "sort-imports": ["error"],
         "symbol-description": "error",
-        "template-curly-spacing": "error"
+        "template-curly-spacing": "error",
+        "vue/html-indent": [
+            "error", 4
+        ]
     }
 }
