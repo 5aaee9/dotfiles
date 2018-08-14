@@ -15,9 +15,14 @@ function fish_prompt --description "Write out the prompt"
     set -l color_cwd
     set -l suffix
 
+    # git settings
     if not set -q __git_cb
         set -l git_color brown
         if git_is_dirty
+            set git_color red
+        end
+
+        if git_is_touched
             set git_color red
         end
         set __git_cb " ["(set_color $git_color)(git branch ^/dev/null | grep \* | sed 's/* //')(set_color normal)"""]"
