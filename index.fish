@@ -1,1 +1,0 @@
-nvm install 10
