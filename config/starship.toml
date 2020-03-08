@@ -1,0 +1,62 @@
+add_newline = false
+
+prompt_order = [
+  "kubernetes",
+  "directory",
+  "git_branch",
+  "git_commit",
+  "git_state",
+  "git_status",
+  "hg_branch",
+  "package",
+  "dotnet",
+  "elm",
+  "golang",
+  "haskell",
+  "java",
+  "nodejs",
+  "php",
+  "python",
+  "ruby",
+  "rust",
+  "terraform",
+  "nix_shell",
+  "conda",
+  "memory_usage",
+  "aws",
+  "env_var",
+  "crystal",
+  "cmd_duration",
+  "line_break",
+  "username",
+  "hostname",
+  "battery",
+  "time",
+  "line_break",
+  "jobs",
+  "character",
+]
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+disabled = false
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 100
+style = "bold yellow"
+
+
+[time]
+disabled = false
+
+[hostname]
+ssh_only = false
+prefix = "⟪"
+suffix = "⟫"
+disabled = false
