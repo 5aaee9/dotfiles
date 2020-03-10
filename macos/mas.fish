@@ -20,3 +20,6 @@ mas install 1497428978
 
 # https://apps.apple.com/cn/app/tencent-lemon-lite/id1449962996
 mas install 1449962996
+
+# https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12
+mas install 1295203466

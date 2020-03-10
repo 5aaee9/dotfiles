@@ -18,7 +18,13 @@ brew cask install \
   imazing \
   telegram \
   slack \
-  neteasemusic
+  neteasemusic \
+  mumble \
+  discord \
+  steam \
+  istat-menus \
+  balenaetcher \
+  multimc
 
 # init miniconda
 conda init

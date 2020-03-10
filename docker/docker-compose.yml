@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+  mysql:
+    container_name: mysql
+    ports:
+    - 3306:3306
+    image: bitnami/mariadb:latest
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: IndexyzDevelopment
+
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    ports:
+    - 50001:80
+    links:
+    - mysql:db
+    restart: always
+
+  redis:
+    container_name: redis
+    image: bitnami/redis:latest
+    ports:
+    - 6379:6379
+    environment:
+      ALLOW_EMPTY_PASSWORD: 'yes'
+    restart: always
