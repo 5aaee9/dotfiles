@@ -24,10 +24,22 @@ brew cask install \
   steam \
   istat-menus \
   balenaetcher \
-  multimc
+  multimc \
+  ezip \
+  mark-text \
+  iina \
+  mounty \
+  rcloneosx \
+  insomnia
 
 # init miniconda
 conda init
 
 # Install sync plugin
 code --install-extension Shan.code-settings-sync
+
+# Install openjdk
+brew tap AdoptOpenJDK/openjdk
+
+# Install openjdk 8
+brew cask install adoptopenjdk8
