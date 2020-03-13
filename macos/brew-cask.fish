@@ -33,7 +33,8 @@ brew cask install \
   insomnia \
   vmware-fusion \
   battle-net \
-  tableplus
+  tableplus \
+  wireshark
 
 # init miniconda
 conda init
