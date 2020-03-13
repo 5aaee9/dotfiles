@@ -18,7 +18,8 @@ brew install \
   tmux \
   go \
   e2fsprogs \
-  libsodium
+  libsodium \
+  jq
 
 cp ../config/config.fish ~/.config/fish/config.fish
 cp ../config/starship.toml ~/.config/starship.toml
