@@ -30,7 +30,10 @@ brew cask install \
   iina \
   mounty \
   rcloneosx \
-  insomnia
+  insomnia \
+  vmware-fusion \
+  battle-net \
+  tableplus
 
 # init miniconda
 conda init

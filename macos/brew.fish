@@ -16,7 +16,9 @@ brew install \
   neofetch \
   docker-compose \
   tmux \
-  go
+  go \
+  e2fsprogs \
+  libsodium
 
 cp ../config/config.fish ~/.config/fish/config.fish
 cp ../config/starship.toml ~/.config/starship.toml
