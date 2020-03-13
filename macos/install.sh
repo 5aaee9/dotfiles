@@ -4,8 +4,3 @@
 
 # install fish
 brew install fish
-
-fish brew.fish
-fish brew-cask.fish
-fish mas.fish
-fish docker.fish

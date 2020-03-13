@@ -27,7 +27,7 @@ brew cask install \
   multimc \
   ezip \
   mark-text \
-  iina \
+  iina \
   mounty \
   rcloneosx \
   insomnia \
