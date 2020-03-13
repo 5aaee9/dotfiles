@@ -8,8 +8,8 @@ for key in (cat sync.json | jq -r 'keys[]')
   set realPath (echo $key | sed "s#^\~#$HOME#g")
   set value (cat sync.json | jq -r '.["'$key'"]')
   if test "$argv[1]" = "up"
-    rclone copy -vv $realPath $Account:$value
+    rclone copy -vv -l $realPath $Account:$value
   else
-    rclone copy -vv $Account:$value $realPath
+    rclone copy -vv -l $Account:$value (dirname $realPath)
   end
 end
