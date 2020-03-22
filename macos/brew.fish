@@ -19,7 +19,10 @@ brew install \
   go \
   e2fsprogs \
   libsodium \
-  jq
+  jq \
+  ffmpeg \
+  portaudio \
+  ansible
 
 cp ../config/config.fish ~/.config/fish/config.fish
 cp ../config/starship.toml ~/.config/starship.toml
