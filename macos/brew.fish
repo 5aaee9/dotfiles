@@ -22,7 +22,12 @@ brew install \
   jq \
   ffmpeg \
   portaudio \
-  ansible
+  ansible \
+  lame \
+  cloudflared
+
+# SSHPass for ansible to init server keys :-)
+brew install http://git.io/sshpass.rb
 
 cp ../config/config.fish ~/.config/fish/config.fish
 cp ../config/starship.toml ~/.config/starship.toml

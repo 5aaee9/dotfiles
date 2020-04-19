@@ -38,7 +38,9 @@ brew cask install \
   dockey \
   battle-net \
   setapp \
-  dropbox
+  dropbox \
+  keyboardcleantool \
+  adobe-creative-cloud
 
 # init miniconda
 conda init
