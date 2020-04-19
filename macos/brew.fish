@@ -23,8 +23,7 @@ brew install \
   ffmpeg \
   portaudio \
   ansible \
-  lame \
-  cloudflared
+  lame
 
 # SSHPass for ansible to init server keys :-)
 brew install http://git.io/sshpass.rb
