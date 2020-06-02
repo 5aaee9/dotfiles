@@ -40,7 +40,17 @@ brew cask install \
   setapp \
   dropbox \
   keyboardcleantool \
-  adobe-creative-cloud
+  adobe-creative-cloud \
+  gcc-arm-embedded \
+  minecraft \
+  bitwarden \
+  jd-gui \
+  calibre \
+  anydesk \
+  chromium \
+  robo-3t \
+  ffsend \
+  authy
 
 # init miniconda
 conda init
