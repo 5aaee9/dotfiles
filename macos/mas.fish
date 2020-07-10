@@ -23,3 +23,6 @@ mas install 1449962996
 
 # https://apps.apple.com/us/app/microsoft-remote-desktop-10/id1295203466?mt=12
 mas install 1295203466
+
+# https://apps.apple.com/cn/app/blackmagic-disk-speed-test/id425264550?mt=12
+mas install 425264550
