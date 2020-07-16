@@ -2,7 +2,7 @@
 
 brew cask install \
   miniconda \
-  visual-studio-code \
+  homebrew/cask-versions/visual-studio-code-insiders \
   keeweb \
   vivaldi \
   iterm2 \
@@ -49,14 +49,10 @@ brew cask install \
   anydesk \
   chromium \
   robo-3t \
-  ffsend \
   authy
 
 # init miniconda
 conda init
-
-# Install sync plugin
-code --install-extension Shan.code-settings-sync
 
 # Install openjdk
 brew tap AdoptOpenJDK/openjdk

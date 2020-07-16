@@ -24,18 +24,17 @@ brew install \
   portaudio \
   ansible \
   lame \
-  cloudflared \
   rustup-init \
   open-ocd \
   dex2jar \
   apktool \
   axel \
-  baidupcs-go \
   you-get \
   mysql-client \
   gnu-sed \
   packer \
-  qemu
+  qemu \
+  ffsend
 
 # SSHPass for ansible to init server keys :-)
 brew install http://git.io/sshpass.rb
