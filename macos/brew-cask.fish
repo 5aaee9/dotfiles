@@ -58,4 +58,4 @@ conda init
 brew tap AdoptOpenJDK/openjdk
 
 # Install openjdk 8
-brew cask install adoptopenjdk8
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
