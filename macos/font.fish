@@ -3,6 +3,6 @@
 brew tap homebrew/cask-fonts
 
 brew cask install \
-  font-cascadia-pl \
+  font-cascadia-code-pl \
   font-cascadia-mono-pl \
   font-jetbrains-mono
