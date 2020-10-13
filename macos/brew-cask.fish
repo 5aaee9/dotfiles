@@ -49,7 +49,9 @@ brew cask install \
   anydesk \
   chromium \
   robo-3t \
-  authy
+  authy \
+  android-file-transfer \
+  android-platform-tools
 
 # init miniconda
 conda init
