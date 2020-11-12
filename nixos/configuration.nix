@@ -23,16 +23,11 @@
     networking.useDHCP = false;
     networking.interfaces.eth0.useDHCP = true;
 
-    # Configure network proxy if necessary
-    # networking.proxy.default = "http://user:password@proxy:port/";
-    # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
     i18n.defaultLocale = "en_US.UTF-8";
 
     nixpkgs.config.allowUnfree = true;
 
     environment.systemPackages = with pkgs; [
-        chromium
         wget
         git
         sakura
@@ -44,10 +39,14 @@
         breeze-icons
         bitwarden
         firefox
+        neofetch
+        htop
     ];
     
     programs.qt5ct.enable = true;
     programs.fish.enable = true;
+
+    services.gnome3.gnome-keyring.enable = true;
     
     virtualisation.podman = {
         enable = true;

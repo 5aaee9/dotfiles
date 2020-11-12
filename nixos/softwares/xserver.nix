@@ -18,7 +18,7 @@
 
         libinput = {
             enable = true;
-            naturalScrolling = true;
+            naturalScrolling = false;
         };
     };
 }
