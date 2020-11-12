@@ -24,7 +24,7 @@ bindsym ${mod}+Shift+c reload
 bindsym ${mod}+Shift+r restart
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym ${mod}+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym ${mod}+space focus mode_toggle

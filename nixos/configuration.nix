@@ -4,6 +4,8 @@
     imports = [
         ./hardware-configuration.nix
         ./softwares/i3.nix
+        ./softwares/xserver.nix
+        ./desktop/fonts.nix
     ];
 
     nix.binaryCaches = [
@@ -14,7 +16,6 @@
     boot.loader.efi.canTouchEfiVariables = true;
 
     networking.usePredictableInterfaceNames = false;
-    networking.hostName = "IndexyzLaptop";
     networking.networkmanager.enable = true;
 
     time.timeZone = "Asia/Shanghai";
@@ -42,45 +43,8 @@
         krusader
         breeze-icons
         bitwarden
+        firefox
     ];
-    
-    services.xserver = {
-        enable = true;
-
-        modules = [ pkgs.xorg.xf86videofbdev ];
-    
-        desktopManager = {
-            xterm.enable = false;
-        };
-
-        displayManager = {
-            defaultSession = "none+i3";
-            # set for debug
-            xserverArgs = [ "-logfile" "/var/log/X.log" ];
-        };
-
-        libinput = {
-            enable = true;
-            naturalScrolling = true;
-        };
-    };
-
-    fonts = {
-        enableDefaultFonts = true;
-        fontconfig.enable = true;
-        enableFontDir = true;
-        enableGhostscriptFonts = true;
-        
-        fonts = with pkgs; [
-            noto-fonts
-            noto-fonts-cjk
-            noto-fonts-emoji
-            wqy_microhei
-            wqy_zenhei
-            cascadia-code
-            iosevka
-        ];
-    };
     
     programs.qt5ct.enable = true;
     programs.fish.enable = true;
