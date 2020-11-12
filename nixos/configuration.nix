@@ -42,10 +42,13 @@
         firefox
         neofetch
         htop
+        slack
+        unstable.tdesktop
     ];
 
     programs.qt5ct.enable = true;
     programs.fish.enable = true;
+    programs.nm-applet.enable = true;
 
     services.gnome3.gnome-keyring.enable = true;
 
