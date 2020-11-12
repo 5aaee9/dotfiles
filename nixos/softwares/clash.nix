@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-let 
+let
     clashDir = "/home/indexyz/Documents/ClashManagement/";
     profileName = "Online";
 in {

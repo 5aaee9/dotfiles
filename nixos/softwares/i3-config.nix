@@ -20,6 +20,9 @@ bindsym ${mod}+Shift+q kill
 # reload the configuration file
 bindsym ${mod}+Shift+c reload
 
+# enter fullscreen mode for the focused container
+bindsym ${mod}+f fullscreen toggle
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym ${mod}+Shift+r restart
 
