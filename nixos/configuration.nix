@@ -8,6 +8,8 @@
     nix.binaryCaches = [
         "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
     ];
+    nix.gc.automatic = true;
+    nix.gc.options = "--delete-older-than 7d";
 
     networking.usePredictableInterfaceNames = false;
     networking.networkmanager.enable = true;
@@ -32,14 +34,15 @@
         gnumake
         gcc
         binutils
+        nload
     ];
 
     programs.fish.enable = true;
 
-    # virtualisation.podman = {
-    #     enable = true;
-    #     dockerCompat = true;
-    # };
+    virtualisation.podman = {
+        enable = true;
+        dockerCompat = true;
+    };
 
     users.users.indexyz = {
         isNormalUser = true;
