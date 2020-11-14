@@ -49,6 +49,8 @@
         shell = pkgs.fish;
     };
 
+    users.users.root.shell = pkgs.fish;
+
     system.stateVersion = "20.09";
 }
 
