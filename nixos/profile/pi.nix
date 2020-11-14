@@ -7,5 +7,6 @@
         ../softwares/ssh.nix
         ../softwares/clash.nix
         ../utils/cn-mirror.nix
+        ../softwares/proxychains.nix
     ];
 }

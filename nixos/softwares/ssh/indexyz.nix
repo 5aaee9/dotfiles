@@ -1,0 +1,6 @@
+[
+    # Hasee Laptop
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINQVrXL5KxSULCy659YGA6ep9mMw16aZHCd+08DFbp6B indexyz@Indexyz-Hasee"
+    # Pi 4B - indexyz
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsI14AeTfIwPSQ963fa2TZxqTd23VXGWNs9a6y7aMgXGBzTGa4qz3Ds2oWuUgBgHsUI1vU8Vq1q+ix75iPhWtVEmXy3i+eKiWv7TCKNkISORrL11tmiQpoI3fvmVpMP7iIiLUpsKdgKdnsKmXp/+bkkos1t3DiOsHpyo4cnxln+poOieU5ZFP5H22A1QvrM3edJMCXwWGCGpuikP0kAOWHy3KW2pX56m8u8rU/moyzbFRrgge+frwdnbwoEX2T0Ofoem6LlT0E07p+Ltz3kTykFejiKIUeXvinqwfGozubTRjBYQk8JVK84gsMIt4OtFTs3wzgiL7Hok30gTtn+UJsu74ENzU1yc71yMyrDyTFbPy5swMrw0X8LAa8BifbmeYCdT9OnlYIO1Tb0MOYG4atEy/PiTvIHK9Ma6GUqpKFSdGcGbyvTbMydIwVAPLY12iQ124gsCWtnhYKFIC2U+ZmLAZUAnSI5FRftvP86x9UYoK6z4bWb8uFUsnUxrREWfs= indexyz@raspberry-pi"
+]

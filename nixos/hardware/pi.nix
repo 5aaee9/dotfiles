@@ -16,4 +16,11 @@
 
     # Required for the Wireless firmware
     hardware.enableRedistributableFirmware = true;
+
+    # Avoids out of memory conditions
+    swapDevices = [{
+        device = "/swapfile";
+        priority = 0;
+        size = 2048;
+    }];
 }
