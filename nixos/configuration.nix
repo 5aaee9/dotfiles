@@ -5,14 +5,10 @@
         ./hardware-configuration.nix
     ];
 
-    nix.binaryCaches = [
-        "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
-    ];
     nix.gc.automatic = true;
     nix.gc.options = "--delete-older-than 7d";
 
     networking.usePredictableInterfaceNames = false;
-    networking.networkmanager.enable = true;
 
     time.timeZone = "Asia/Shanghai";
 
@@ -35,6 +31,7 @@
         gcc
         binutils
         nload
+        vim
     ];
 
     programs.fish.enable = true;

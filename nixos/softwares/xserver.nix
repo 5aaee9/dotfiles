@@ -21,4 +21,5 @@
             naturalScrolling = false;
         };
     };
+    networking.networkmanager.enable = true;
 }

@@ -6,5 +6,6 @@
         ../hardware/wifi.nix
         ../softwares/ssh.nix
         ../softwares/clash.nix
+        ../utils/cn-mirror.nix
     ];
 }
