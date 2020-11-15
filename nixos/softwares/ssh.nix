@@ -2,7 +2,7 @@
 
 {
     services.openssh.enable = true;
-    services.openssh.permitRootLogin = "yes";
+    services.openssh.permitRootLogin = "prohibit-password";
 
     networking.firewall.allowedTCPPorts = [ 22 ];
 
