@@ -2,9 +2,7 @@
 
 brew cask install \
   miniconda \
-  homebrew/cask-versions/visual-studio-code-insiders \
-  keeweb \
-  vivaldi \
+  visual-studio-code \
   iterm2 \
   jetbrains-toolbox \
   github \
@@ -15,14 +13,10 @@ brew cask install \
   docker \
   utools \
   switchhosts \
-  imazing \
-  telegram \
-  slack \
   neteasemusic \
   mumble \
   discord \
   steam \
-  istat-menus \
   balenaetcher \
   multimc \
   ezip \
@@ -31,27 +25,22 @@ brew cask install \
   mounty \
   rcloneosx \
   insomnia \
-  vmware-fusion \
-  battle-net \
   wireshark \
   notion \
   dockey \
-  battle-net \
-  setapp \
   dropbox \
   keyboardcleantool \
-  adobe-creative-cloud \
   gcc-arm-embedded \
   minecraft \
   bitwarden \
   jd-gui \
   calibre \
   anydesk \
-  chromium \
+  google-chrome \
   robo-3t \
-  authy \
   android-file-transfer \
-  android-platform-tools
+  android-platform-tools \
+  istat-menus
 
 # init miniconda
 conda init

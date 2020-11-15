@@ -2,7 +2,6 @@
 
 brew install \
   nodejs \
-  yarn \
   fish \
   git \
   starship \
