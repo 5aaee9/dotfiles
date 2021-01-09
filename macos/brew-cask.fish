@@ -1,7 +1,6 @@
 #!/usr/local/bin/fish
 
-brew cask install \
-  miniconda \
+brew install \
   visual-studio-code \
   iterm2 \
   jetbrains-toolbox \
@@ -10,8 +9,7 @@ brew cask install \
   motrix \
   snipaste \
   upic \
-  docker \
-  utools \
+  homebrew/cask/docker \
   switchhosts \
   neteasemusic \
   mumble \
@@ -19,11 +17,9 @@ brew cask install \
   steam \
   balenaetcher \
   multimc \
-  ezip \
   mark-text \
   iina \
   mounty \
-  rcloneosx \
   insomnia \
   wireshark \
   notion \
@@ -33,7 +29,6 @@ brew cask install \
   gcc-arm-embedded \
   minecraft \
   bitwarden \
-  jd-gui \
   calibre \
   anydesk \
   google-chrome \
@@ -42,11 +37,8 @@ brew cask install \
   android-platform-tools \
   istat-menus
 
-# init miniconda
-conda init
-
 # Install openjdk
 brew tap AdoptOpenJDK/openjdk
 
 # Install openjdk 8
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+brew install adoptopenjdk/openjdk/adoptopenjdk8
