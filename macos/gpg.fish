@@ -4,8 +4,7 @@
 # To import private keys
 
 # Install GPG softwares
-brew install gnupg pinentry-mac
-brew cask install gpg-suite
+brew install gnupg pinentry-mac gpg-suite
 
 # Update config
 echo "no-tty
