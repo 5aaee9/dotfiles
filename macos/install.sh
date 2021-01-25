@@ -4,3 +4,7 @@
 
 # install fish
 brew install fish
+
+echo $(which fish) >> /etc/shell
+sudo chsh -s $(which fish)
+sudo chsh -s $(which fish) $(whoami)
