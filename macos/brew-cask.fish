@@ -1,5 +1,6 @@
 #!/usr/local/bin/fish
 
+
 brew install \
   visual-studio-code \
   iterm2 \
@@ -42,3 +43,7 @@ brew tap AdoptOpenJDK/openjdk
 
 # Install openjdk 8
 brew install adoptopenjdk/openjdk/adoptopenjdk8
+
+# Install kicad-nightly
+brew tap indexyz/homebrew-kicad-nightly
+brew install kicad-nightly
