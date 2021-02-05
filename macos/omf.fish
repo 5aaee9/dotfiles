@@ -1,3 +1,6 @@
+#!/usr/local/bin/fish
+
+export NONINTERACTIVE="yes"
 curl -L https://get.oh-my.fish | fish
 
 omf install proxy

@@ -2,6 +2,7 @@
 set -e
 
 export NONINTERACTIVE="yes"
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install fish
@@ -13,4 +14,6 @@ sudo chsh -s $(which fish) $(whoami)
 sudo bash macos/patch-sudo.bash
 fish macos/brew.fish
 fish macos/gpg.fish
+fish macos/git.fish
+fish macos/settings.fish
 fish macos/omf.fish
