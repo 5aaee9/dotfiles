@@ -10,10 +10,6 @@ max-cache-ttl 7200
 pinentry-program /usr/local/bin/pinentry-mac
 enable-ssh-support" > ~/.gnupg/gpg-agent.conf
 
-if test ! -d ~/.config/fish/conf.d/
-    mkdir -p  ~/.config/fish/conf.d/
-end
-
 echo "# Start or re-use a gpg-agent.
 gpgconf --launch gpg-agent
 

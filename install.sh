@@ -11,9 +11,14 @@ sudo bash -c 'echo $(which fish) >> /etc/shells'
 sudo chsh -s $(which fish)
 sudo chsh -s $(which fish) $(whoami)
 
+if [ ! -d ~/.config/fish/conf.d/ ]; then
+    mkdir -p  ~/.config/fish/conf.d/
+fi
+
 sudo bash macos/patch-sudo.bash
 fish macos/brew.fish
 fish macos/gpg.fish
+fish macos/java.fish
 fish macos/git.fish
 fish macos/settings.fish
 fish macos/omf.fish
