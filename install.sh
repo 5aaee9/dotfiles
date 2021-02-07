@@ -22,3 +22,5 @@ fish macos/java.fish
 fish macos/git.fish
 fish macos/settings.fish
 fish macos/omf.fish
+
+fish macos/fixs/qemu/permission.fish
