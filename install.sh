@@ -16,6 +16,7 @@ if [ ! -d ~/.config/fish/conf.d/ ]; then
 fi
 
 sudo bash macos/patch-sudo.bash
+cp -r macos/fish/* ~/.config/fish/conf.d/
 fish macos/brew.fish
 fish macos/gpg.fish
 fish macos/java.fish
