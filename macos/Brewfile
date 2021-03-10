@@ -48,6 +48,7 @@ brew "sleepwatcher", restart_service: true
 brew "smartmontools"
 brew "starship"
 brew "tmux"
+brew "watch"
 brew "wgcf"
 brew "wget"
 brew "wireshark"
@@ -103,6 +104,7 @@ cask "snipaste"
 cask "steam"
 cask "switchhosts"
 cask "switchresx"
+cask "transmission-remote-gui"
 cask "upic"
 cask "visual-studio-code"
 cask "vmware-fusion"
@@ -110,6 +112,7 @@ cask "vofa-plus"
 cask "yesplaymusic"
 mas "Magnet", id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
+mas "QQ", id: 451108668
 mas "Remote Desktop", id: 409907375
 mas "Telegram", id: 747648890
 mas "WireGuard", id: 1451685025
