@@ -15,6 +15,7 @@ if [ ! -d ~/.config/fish/conf.d/ ]; then
     mkdir -p  ~/.config/fish/conf.d/
 fi
 
+fish macos/tor.fish
 sudo bash macos/patch-sudo.bash
 cp -r macos/fish/* ~/.config/fish/conf.d/
 fish macos/brew.fish
