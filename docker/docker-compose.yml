@@ -5,10 +5,10 @@ services:
     container_name: mysql
     ports:
     - 3306:3306
-    image: bitnami/mariadb:latest
+    image: mariadb:latest
     restart: always
     environment:
-      MARIADB_ROOT_PASSWORD: IndexyzDevelopment
+      MYSQL_ROOT_PASSWORD: IndexyzDevelopment
 
   phpmyadmin:
     container_name: phpmyadmin
@@ -21,7 +21,7 @@ services:
 
   redis:
     container_name: redis
-    image: bitnami/redis:latest
+    image: redis:alpine
     ports:
     - 6379:6379
     environment:
