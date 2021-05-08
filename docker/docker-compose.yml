@@ -15,8 +15,8 @@ services:
     image: phpmyadmin/phpmyadmin
     ports:
     - 50001:80
-    links:
-    - mysql:db
+    environment:
+      PMA_HOST: mysql
     restart: always
 
   redis:
@@ -49,3 +49,14 @@ services:
     - 18083:18083
     image: emqx/emqx
     restart: always
+
+  postgres:
+    container_name: postgres
+    image: postgres:13.2-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: IndexyzDevelopment
+    volumes:
+    - ~/Dokcer/Postgres:/var/lib/postgresql/data
+    ports:
+    - 5432:5432
