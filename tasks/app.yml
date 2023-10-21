@@ -32,4 +32,28 @@
     - node
     - starship
     - neofetch
+    - just
+    - yubikey-agent
+    - yarn
+    - coreutils
+    - diffutils
+    - findutils
+    - gawk
+    - gnu-getopt
+    - gnu-tar
+    - grep
+    - make
+    - ncurses
+    - pkg-config
+    - wget
+    - quilt
+    - xz
+    - gcc@11
     state: present
+
+- name: Start yubikey agent
+  ansible.builtin.command: brew services start yubikey-agent
+  environment:
+    PATH: "/opt/homebrew/bin:/usr/local/bin:{{ ansible_env.PATH }}"
+  when: ansible_os_family == "Darwin"
+  become: false
