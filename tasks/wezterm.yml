@@ -4,7 +4,7 @@
     name: wezterm
     state: present
 
-- name: Render wezterm config
+- name: Copy wezterm config
   copy:
     src: .wezterm.lua
     dest: ~/.wezterm.lua

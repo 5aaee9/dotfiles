@@ -1,0 +1,10 @@
+# Do sudo using Touch ID
+- name: Set content of sudo file as fact
+  set_fact:
+    sudo_conf: "{{ lookup('file', '/etc/pam.d/sudo') }}"
+  ignore_errors: yes
+
+- name: Set sudo via Touch ID if not setup
+  become: yes
+  command: sed -i '' 's/auth       sufficient     pam_smartcard.so/auth       sufficient     pam_smartcard.so\nauth       sufficient     pam_tid.so/g' /etc/pam.d/sudo
+  when: "'auth       sufficient     pam_tid.so' not in sudo_conf"

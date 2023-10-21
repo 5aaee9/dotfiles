@@ -1,0 +1,14 @@
+---
+- name: Set ZSH as the default shell
+  shell: chsh -s $(which fish) {{ lookup('env', 'USER') }}
+  become: true
+
+- name: Copy fish config
+  copy:
+    src: config.fish
+    dest: ~/.config/fish/config.fish
+
+- name: Copy starship config
+  copy:
+    src: starship.toml
+    dest: ~/.config/starship.toml

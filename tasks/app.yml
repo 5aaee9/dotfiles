@@ -24,11 +24,12 @@
 
 - name: Setup brew clis
   homebrew:
-  name:
-  - ansible
-  - fish
-  - gh
-  - go
-  - node
-  - starship
-  state: present
+    name:
+    - ansible
+    - fish
+    - gh
+    - go
+    - node
+    - starship
+    - neofetch
+    state: present
