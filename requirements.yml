@@ -1,0 +1,9 @@
+---
+roles:
+  - name: elliotweiser.osx-command-line-tools
+  - name: geerlingguy.dotfiles
+  - src: https://github.com/ctorgalson/ansible-role-macos-hostname.git
+    name: ctorgalson.macos-hostname
+
+collections:
+  - name: community.general

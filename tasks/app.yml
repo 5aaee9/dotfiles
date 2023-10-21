@@ -1,0 +1,34 @@
+---
+- name: Setup brew cask fonts taps
+  homebrew_tap:
+    name: homebrew/cask-fonts
+
+- name: Setup brew casks
+  homebrew_cask:
+    name:
+    - github
+    - 1password
+    - bitwarden
+    - chromium
+    - jetbrains-toolbox
+    - visual-studio-code
+    state: present
+
+- name: Setup brew font casks
+  homebrew_cask:
+    name:
+    - font-caskaydia-cove-nerd-font
+    - font-fira-code-nerd-font
+    - font-menlo-for-powerline
+    state: present
+
+- name: Setup brew clis
+  homebrew:
+  name:
+  - ansible
+  - fish
+  - gh
+  - go
+  - node
+  - starship
+  state: present

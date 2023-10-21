@@ -1,0 +1,10 @@
+---
+- name: Setup wezterm
+  homebrew_cask:
+    name: wezterm
+    state: present
+
+- name: Render wezterm config
+  copy:
+    src: .wezterm.lua
+    dest: ~/.wezterm.lua
