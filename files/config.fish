@@ -13,3 +13,18 @@ fish_add_path "$(brew --prefix)/opt/gnu-tar/libexec/gnubin"
 fish_add_path "$(brew --prefix)/opt/grep/libexec/gnubin"
 fish_add_path "$(brew --prefix)/opt/gnu-sed/libexec/gnubin"
 fish_add_path "$(brew --prefix)/opt/make/libexec/gnubin"
+
+# Golang
+fish_add_path "$HOME/go/bin"
+
+# Android
+fish_add_path "$HOME/Library/Android/sdk/platform-tools/"
+fish_add_path "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
+
+# Java
+fish_add_path "/usr/local/opt/openjdk@17/bin"
+set -gx CPPFLAGS "-I/usr/local/opt/openjdk@17/include"
+
+# Alias
+alias ls 'eza'
+alias find 'fd'

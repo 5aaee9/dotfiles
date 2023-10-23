@@ -49,6 +49,11 @@
     - quilt
     - xz
     - gcc@11
+    - buf
+    - openjdk@17
+    - ripgrep
+    - eza
+    - fd
     state: present
 
 - name: Start yubikey agent
