@@ -5,6 +5,10 @@ if status is-interactive
 end
 
 set -gx SSH_AUTH_SOCK "$(brew --prefix)/var/run/yubikey-agent.sock"
+
+# Capacitor Android Studio
+set -gx CAPACITOR_ANDROID_STUDIO_PATH "$HOME/Applications/Android Studio.app/"
+
 # GNU Toolkit
 fish_add_path "$(brew --prefix)/opt/coreutils/libexec/gnubin"
 fish_add_path "$(brew --prefix)/opt/findutils/libexec/gnubin"

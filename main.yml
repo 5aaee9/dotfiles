@@ -21,3 +21,6 @@
 
     - import_tasks: tasks/fish.yml
       tags: ['shell']
+
+    - import_tasks: tasks/git.yml
+      tags: ['git']
