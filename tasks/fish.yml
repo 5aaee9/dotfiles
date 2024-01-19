@@ -2,6 +2,11 @@
 - name: Set ZSH as the default shell
   shell: chsh -s $(which fish) {{ lookup('env', 'USER') }}
   become: true
+  
+- name: Creates directory
+  ansible.builtin.file:
+    path: ~/.config/fish
+    state: directory
 
 - name: Copy fish config
   copy:

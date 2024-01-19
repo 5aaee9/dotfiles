@@ -12,6 +12,7 @@
     - chromium
     - jetbrains-toolbox
     - visual-studio-code
+    - google-chrome
     state: present
 
 - name: Setup brew font casks

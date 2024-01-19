@@ -1,3 +1,8 @@
+# Source homebrew env in darwin aarch64
+if test -f /opt/homebrew/bin/brew
+  /opt/homebrew/bin/brew shellenv | source
+end
+
 if status is-interactive
   # Commands to run in interactive sessions can go here
   starship init fish | source
@@ -28,6 +33,12 @@ fish_add_path "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
 # Java
 fish_add_path "/usr/local/opt/openjdk@17/bin"
 set -gx CPPFLAGS "-I/usr/local/opt/openjdk@17/include"
+
+# Jetbrains Toolbox
+
+if test -d "~/Library/Application Support/JetBrains/Toolbox/scripts"
+  fish_add_path "~/Library/Application Support/JetBrains/Toolbox/scripts"
+end
 
 # Alias
 alias ls 'eza'

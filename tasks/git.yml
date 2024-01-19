@@ -11,26 +11,26 @@
     scope: global
     value: "7685264+5aaee9@users.noreply.github.com"
 
-- name: Set git use SSH sign
-  git_config:
-    name: gpg.format
-    scope: global
-    value: ssh
+# - name: Set git use SSH sign
+#   git_config:
+#     name: gpg.format
+#     scope: global
+#     value: ssh
 
-- name: Set git sign key
-  git_config:
-    name: user.signingKey
-    scope: global
-    value: "key::ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCbas83Z0SQR/dCvBGZSuKaKD9l48tkaxIV54TjZ5ZB7T3LGf3OE1WLvYj9McJem0v2Ik50jhMBUO6b+kLm7jd8="
+# - name: Set git sign key
+#   git_config:
+#     name: user.signingKey
+#     scope: global
+#     value: "key::ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCbas83Z0SQR/dCvBGZSuKaKD9l48tkaxIV54TjZ5ZB7T3LGf3OE1WLvYj9McJem0v2Ik50jhMBUO6b+kLm7jd8="
 
-- name: Set git commit auto sign
-  git_config:
-    name: commit.gpgsign
-    scope: global
-    value: 'true'
+# - name: Set git commit auto sign
+#   git_config:
+#     name: commit.gpgsign
+#     scope: global
+#     value: 'true'
 
-- name: Set git tag sign
-  git_config:
-    name: tag.gpgsign
-    scope: global
-    value: 'true'
+# - name: Set git tag sign
+#   git_config:
+#     name: tag.gpgsign
+#     scope: global
+#     value: 'true'
