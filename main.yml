@@ -2,9 +2,6 @@
 - name: Configure host.
   hosts: all
 
-  vars_files:
-    - default.config.yml
-
   roles:
     - role: elliotweiser.osx-command-line-tools
     - role: ctorgalson.macos-hostname

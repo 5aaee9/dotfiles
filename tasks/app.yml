@@ -13,6 +13,9 @@
     - jetbrains-toolbox
     - visual-studio-code
     - google-chrome
+    - betterdisplay
+    - moonlight
+    - discord
     state: present
 
 - name: Setup brew font casks
@@ -55,6 +58,8 @@
     - ripgrep
     - eza
     - fd
+    - sd
+    - ykman
     state: present
 
 - name: Start yubikey agent
