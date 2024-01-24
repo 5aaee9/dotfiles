@@ -16,6 +16,8 @@
     - betterdisplay
     - moonlight
     - discord
+    - snipaste
+    - hiddenbar
     state: present
 
 - name: Setup brew font casks
