@@ -36,8 +36,8 @@ set -gx CPPFLAGS "-I/usr/local/opt/openjdk@17/include"
 
 # Jetbrains Toolbox
 
-if test -d "~/Library/Application Support/JetBrains/Toolbox/scripts"
-  fish_add_path "~/Library/Application Support/JetBrains/Toolbox/scripts"
+if test -d "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+  fish_add_path "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 end
 
 # Alias

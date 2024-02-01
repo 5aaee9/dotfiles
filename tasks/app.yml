@@ -18,6 +18,7 @@
     - discord
     - snipaste
     - hiddenbar
+    - teleport-connect
     state: present
 
 - name: Setup brew font casks
@@ -40,7 +41,7 @@
     - neofetch
     - just
     - yubikey-agent
-    - yarn
+    - corepack
     - coreutils
     - diffutils
     - findutils
