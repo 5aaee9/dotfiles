@@ -19,6 +19,7 @@
     - snipaste
     - hiddenbar
     - teleport-connect
+    - warp
     state: present
 
 - name: Setup brew font casks
@@ -63,6 +64,7 @@
     - fd
     - sd
     - ykman
+    - git-credential-oauth
     state: present
 
 - name: Start yubikey agent

@@ -11,6 +11,12 @@
     scope: global
     value: "7685264+5aaee9@users.noreply.github.com"
 
+- name: Set self-hosted git credential helper to oauth
+  git_config:
+    name: credential."https://git.indexyz.me".helper
+    scope: global
+    value: oauth
+
 # - name: Set git use SSH sign
 #   git_config:
 #     name: gpg.format
