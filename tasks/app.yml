@@ -20,6 +20,7 @@
     - hiddenbar
     - teleport-connect
     - warp
+    - bambu-studio
     state: present
 
 - name: Setup brew font casks
