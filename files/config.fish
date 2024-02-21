@@ -41,5 +41,7 @@ if test -d "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 end
 
 # Alias
-alias ls 'eza'
+if type -q eza
+  alias ls 'eza'
+end
 alias find 'fd'
