@@ -13,7 +13,6 @@
     - jetbrains-toolbox
     - visual-studio-code
     - google-chrome
-    - betterdisplay
     - moonlight
     - discord
     - snipaste
@@ -22,6 +21,13 @@
     - warp
     - bambu-studio
     state: present
+
+- name: Setup brew casks (macOS > 10.15)
+  homebrew_cask:
+    name:
+    - betterdisplay
+  when:
+    - ansible_distribution_version is version('10.16', '>=')
 
 - name: Setup brew font casks
   homebrew_cask:
@@ -59,14 +65,20 @@
     - xz
     - gcc@11
     - buf
-    - openjdk@17
     - ripgrep
-    - eza
     - fd
     - sd
     - ykman
     - git-credential-oauth
     state: present
+
+- name: Setup brew clis (macOS > 10.15)
+  homebrew:
+    name:
+    - openjdk@17
+    - eza
+  when:
+    - ansible_distribution_version is version('10.16', '>=')
 
 - name: Start yubikey agent
   ansible.builtin.command: brew services start yubikey-agent
