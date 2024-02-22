@@ -20,6 +20,8 @@
     - teleport-connect
     - warp
     - bambu-studio
+    - postman
+    - whisky
     state: present
 
 - name: Setup brew casks (macOS > 10.15)
