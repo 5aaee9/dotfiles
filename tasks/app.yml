@@ -22,6 +22,7 @@
     - bambu-studio
     - postman
     - whisky
+    - balenaetcher
     state: present
 
 - name: Setup brew casks (macOS > 10.15)
