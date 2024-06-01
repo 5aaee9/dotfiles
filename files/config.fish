@@ -9,6 +9,8 @@ if status is-interactive
   set -gx EDITOR "code --wait"
 end
 
+fish_add_path "$HOME/.local/bin/"
+
 set -gx SSH_AUTH_SOCK "$(brew --prefix)/var/run/yubikey-agent.sock"
 
 # Capacitor Android Studio
@@ -29,6 +31,7 @@ fish_add_path "$HOME/go/bin"
 # Android
 fish_add_path "$HOME/Library/Android/sdk/platform-tools/"
 fish_add_path "$HOME/Library/Android/sdk/cmdline-tools/latest/bin"
+fish_add_path "$HOME/Library/Android/sdk/build-tools/33.0.1"
 
 # Java
 fish_add_path "/usr/local/opt/openjdk@17/bin"

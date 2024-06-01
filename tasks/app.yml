@@ -23,6 +23,7 @@
     - postman
     - whisky
     - balenaetcher
+    - db-browser-for-sqlite
     state: present
 
 - name: Setup brew casks (macOS > 10.15)
