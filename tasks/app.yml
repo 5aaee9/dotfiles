@@ -1,7 +1,7 @@
 ---
-- name: Setup brew cask fonts taps
-  homebrew_tap:
-    name: homebrew/cask-fonts
+#- name: Setup brew cask fonts taps
+#  homebrew_tap:
+#    name: homebrew/cask-fonts
 
 - name: Setup brew casks
   homebrew_cask:
@@ -24,6 +24,7 @@
     - whisky
     - balenaetcher
     - db-browser-for-sqlite
+    - firefox
     state: present
 
 - name: Setup brew casks (macOS > 10.15)
