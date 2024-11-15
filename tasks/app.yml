@@ -25,6 +25,9 @@
     - balenaetcher
     - db-browser-for-sqlite
     - firefox
+    - android-platform-tools
+    - jordanbaird-ice
+    - tailscale
     state: present
 
 - name: Setup brew casks (macOS > 10.15)
@@ -77,6 +80,8 @@
     - htop
     - nload
     - git-credential-oauth
+    - asitop
+    - pnpm
     state: present
 
 - name: Setup brew clis (macOS > 10.15)
